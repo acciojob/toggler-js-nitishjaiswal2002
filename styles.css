@@ -1,1 +1,39 @@
 /*  your css code here. If applicable */
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.toggle-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.toggle-container .g1, 
+.toggle-container .g2, 
+.toggle-container .g3 {
+  margin: 0 10px;
+}
+
+input[type="checkbox"].toggle {
+  display: none;
+}
+
+input[type="checkbox"].toggle + span {
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+}
+
+input[type="checkbox"].toggle:checked + span {
+  background-color: #4CAF50;
+  color: white;
+}
