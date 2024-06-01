@@ -4,9 +4,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
   checkboxes.forEach(checkbox => {
     checkbox.addEventListener('change', function() {
-      const checked = document.querySelectorAll('#toggle:checked');
+      const checked = document.querySelectorAll('.toggle:checked');
       if (checked.length > 2) {
-        this.checked = false;
+        // Uncheck the last checked checkbox
+        checked[0].checked = false;
       }
     });
 
